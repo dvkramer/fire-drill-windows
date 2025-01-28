@@ -7,9 +7,9 @@ Fire Drill is a desktop application for Windows designed to enhance fire safety 
 - **Drill Simulation (`drill.py`)**: Handles the core functionality of the fire drill, including:
   - Fullscreen flashing red screen.
   - Loud fire alarm sound to mimic a real emergency.
-
-## Features in Progress
-- **Scheduler**: A system to initiate drills at random intervals is under development. Stay tuned for updates!
+- **Scheduler (`scheduler.py`)**: Manages the automatic scheduling of fire drills.
+- Adds itself to the system startup.
+- Uses a mean time to happen (MTTH) of 1 month to randomly determine when drills will occur.
 
 ## Why Fire Drill?
 Practicing fire escape plans can be a lifesaver in emergencies. Fire Drill encourages users to prepare effectively by simulating the stress and urgency of a real fire scenario.
