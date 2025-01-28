@@ -23,6 +23,3 @@ The goal of Fire Drill is to help you be better prepared for emergencies. Even t
 ---
 ### License
 This project is licensed under the [Apache-2.0 License](LICENSE).
-
----
-**Fire Drill**: Practice for safety, because seconds count.
