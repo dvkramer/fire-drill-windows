@@ -15,7 +15,7 @@ Fire Drill is a desktop application for Windows designed to enhance fire safety 
 Practicing fire escape plans can be a lifesaver in emergencies. Fire Drill encourages users to prepare effectively by simulating the stress and urgency of a real fire scenario.
 
 ## Contribute
-This project is a work in progress, and contributions are welcome! If you'd like to help with the scheduler or other features, please submit an issue or pull request on the [GitHub repository](https://github.com/dvkramer/fire-drill).
+This project is a work in progress, and contributions are welcome! If you'd like to help with the scheduler or other features, please submit an issue or pull request.
 
 ## Stay Safe
 The goal of Fire Drill is to help you be better prepared for emergencies. Even though the app is still in development, practicing early could make all the difference when seconds count.
