@@ -9,7 +9,7 @@ Fire Drill is a desktop application for Windows designed to enhance fire safety 
   - Loud fire alarm sound to mimic a real emergency.
 
 ## Features in Progress
-- **Scheduler**: A system to initiate drills at random intervals (e.g., once a week) is under development. Stay tuned for updates!
+- **Scheduler**: A system to initiate drills at random intervals is under development. Stay tuned for updates!
 
 ## Why Fire Drill?
 Practicing fire escape plans can be a lifesaver in emergencies. Fire Drill encourages users to prepare effectively by simulating the stress and urgency of a real fire scenario.
