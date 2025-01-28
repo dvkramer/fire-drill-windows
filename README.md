@@ -1,4 +1,4 @@
-# Fire Drill - A Home Fire Safety Simulation Tool (WIP)
+# Fire Drill for Windows - A Home Fire Safety Tool
 
 ## Overview
 Fire Drill is a desktop application for Windows designed to enhance fire safety preparedness by simulating surprise fire drills. While still in development, the program aims to help users practice their home fire escape plans in a realistic and engaging way.
