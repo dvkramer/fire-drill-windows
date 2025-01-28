@@ -11,6 +11,12 @@ Fire Drill is a desktop application for Windows designed to enhance fire safety 
   - Adds itself to the system startup.
   - Uses a mean time to happen (MTTH) of 1 month to randomly determine when drills will occur.
 
+## Usage
+1. Download and unzip the release
+2. Place the fire drill folder wherever you want i.e. inside your documents folder. There is no installer.
+3. Run scheduler.exe
+4. Everything should be set up! To verify, you can check the startup tab in your task manager. The scheduler should add itself to this list, so the software can persist between reboots and deliver random, realistic fire drills.
+
 ## Why Fire Drill?
 Practicing fire escape plans can be a lifesaver in emergencies. Fire Drill encourages users to prepare effectively by simulating the stress and urgency of a real fire scenario.
 
