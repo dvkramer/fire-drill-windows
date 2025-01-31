@@ -24,7 +24,7 @@ Practicing fire escape plans can be a lifesaver in emergencies. Fire Drill encou
 This project is a work in progress, and contributions are welcome! If you'd like to help with the scheduler or other features, please submit an issue or pull request.
 
 ## Stay Safe
-The goal of Fire Drill is to help you be better prepared for emergencies. Even though the app is still in development, practicing early could make all the difference when seconds count.
+Fire Drill helps you build confidence in your escape plan so you can act decisively when seconds matter. Stay safe, stay sharp, and always be ready. As Andy Grove said, "only the paranoid survive."
 
 ---
 ### License
