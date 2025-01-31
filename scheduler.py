@@ -16,17 +16,30 @@ STARTUP_FOLDER = os.path.join(os.path.expandvars("%APPDATA%"), "Microsoft", "Win
 SHORTCUT_NAME = "FireDrillScheduler.lnk" # Name for the shortcut in startup
 SHORTCUT_PATH = os.path.join(STARTUP_FOLDER, SHORTCUT_NAME)
 
+MIN_DELAY_SECONDS = 15 * 60  # 15 minutes
+MAX_DELAY_SECONDS = 3 * SECONDS_IN_MONTH  # 3 months
+
 def getRandomInterval():
     """Calculates a random interval in seconds based on MTTH."""
     lambda_val = 1 / (MTTH_MONTHS * SECONDS_IN_MONTH) # Lambda in events per second
     return -math.log(1 - random.random()) / lambda_val
 
 def schedule_next_drill():
-    """Schedules the next fire drill and returns the scheduled time."""
-    interval_seconds = getRandomInterval()
-    next_drill_time = time.time() + interval_seconds
-    print(f"Next fire drill scheduled in approximately {interval_seconds:.0f} seconds ({interval_seconds/3600/24:.2f} days).") # More informative output
-    return next_drill_time
+    """Schedules the next fire drill with sanity checks and returns the scheduled time."""
+    while True: # Loop until a valid time is generated
+        interval_seconds = getRandomInterval()
+        next_drill_time_candidate = time.time() + interval_seconds
+
+        min_time = time.time() + MIN_DELAY_SECONDS
+        max_time = time.time() + MAX_DELAY_SECONDS
+
+        if min_time <= next_drill_time_candidate <= max_time:
+            next_drill_time = next_drill_time_candidate
+            interval_days = interval_seconds / (24 * 3600)
+            print(f"Next fire drill scheduled in approximately {interval_seconds:.0f} seconds ({interval_days:.2f} days).")
+            return next_drill_time
+        else:
+            print(f"Generated interval ({interval_seconds:.0f} seconds, {interval_seconds / (24 * 3600):.2f} days) out of sanity bounds (min: {MIN_DELAY_SECONDS:.0f}s, max: {MAX_DELAY_SECONDS:.0f}s). Re-rolling...")
 
 def trigger_fire_drill_ui():
     """Launches the Fire Drill UI executable."""
